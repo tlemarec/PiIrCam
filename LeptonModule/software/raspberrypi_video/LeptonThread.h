@@ -8,18 +8,11 @@
 #include <QtCore>
 #include <QPixmap>
 #include <QImage>
-#include <QString>
-#include <iostream>
-#include <QPainter>
-#include <cstdlib>
 
 #define PACKET_SIZE 164
 #define PACKET_SIZE_UINT16 (PACKET_SIZE/2)
-#define NUMBER_OF_SEGMENTS 4
-#define PACKETS_PER_SEGMENT 60
-#define PACKETS_PER_FRAME (PACKETS_PER_SEGMENT*NUMBER_OF_SEGMENTS)
+#define PACKETS_PER_FRAME 60
 #define FRAME_SIZE_UINT16 (PACKET_SIZE_UINT16*PACKETS_PER_FRAME)
-//#define FPS 27;
 
 class LeptonThread : public QThread
 {

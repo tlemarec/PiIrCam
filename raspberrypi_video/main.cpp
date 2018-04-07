@@ -31,6 +31,7 @@ int main( int argc, char **argv )
 			myImage.setPixel(i, j, red);
 		}
 	}
+	//ss
 
 	//create a label, and set it's image to the placeholder
 	MyLabel myLabel(myWidget);

@@ -4,6 +4,11 @@
 #include "SPI.h"
 #include "Lepton_I2C.h"
 
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <unistd.h>
+
+
 #define PACKET_SIZE 164
 #define PACKET_SIZE_UINT16 (PACKET_SIZE/2)
 #define NUMBER_OF_SEGMENTS 4
